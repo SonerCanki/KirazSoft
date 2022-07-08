@@ -1,5 +1,12 @@
 ---------Backend Test Soru 1
 
+Tickect nesnesine Include metodu ile TicketItem, Discount, Payment, TicketStatuses, TicketTagDetail nesneleri eklenmiştir. 
+ThenInclude metodu ile TicketItem nesnesine TicketItemProperties nesnesi eklenmiştir.
+Where ile OpenDate property'si startDate ile finishDate değişkenleri arasında olan ve CompanyId request'ten gelen CompanyId'ye eşit olan bir sorgu geri döndürülür. 
 
 
 ---------Backend Test Soru 2
+tickets sorgusundan SelectMany ile TicketItem listesini seçiyoruz.
+Where ile ItemStatus Property'si ItemStatus enum'ından Voided ve Cancelled olmayan bir sorgu geri döndürülür.
+GroupBy ile ProductGroupName'e göre gruplandırılır.
+Select içinde ProductGroupName, TotalCount, TotalAmount, propertilerini doldurup ToList ile sorgumuzu listeliyoruz. 
